@@ -16,6 +16,8 @@
 
 构造器：`SMmuiscPlay(options)`
 
+引入文件：`js/music_play.js`或`js/muisc_play.min.js`
+
 ## options选项
 
 **el** 
