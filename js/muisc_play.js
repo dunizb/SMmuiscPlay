@@ -1,7 +1,7 @@
 ;(function(global){
     var __INFO__ = {
         plugins: "SMmuiscPlay",
-        version: "0.0.1",
+        version: "0.0.2",
         author: "Dunizb",
         website: "http://dunizb.com"
     };
@@ -33,7 +33,7 @@
         var audioList = audioBox.querySelectorAll("select")[0];
         var audioTag = audioBox.querySelectorAll("audio")[0];
 
-        //跟换播放按钮图片
+        //更换播放按钮图片
         if(!settings.buttonImgSrc) {
             console.log(1)
             audioButton.style.backgroundSize = "73px";
