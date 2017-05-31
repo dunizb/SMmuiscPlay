@@ -4,7 +4,7 @@
   "description": "- 极简（无花俏布局和样式）\r - 小巧（117行js代码）\r - 无依赖（无CSS、图片等依赖）\r - 可定制（自定义设置）",
   "main": "index.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dunizb/SMmuiscPlay/issues"
   },
-  "homepage": "https://github.com/dunizb/SMmuiscPlay#readme"
+  "homepage": "https://github.com/dunizb/SMmuiscPlay#readme",
+  "devDependencies": {
+    "jasmine": "^2.6.0"
+  }
 }
