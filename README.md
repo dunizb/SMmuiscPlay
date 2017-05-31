@@ -21,6 +21,9 @@
 
 适合手机页面，H5活动页，微信页面等的音乐播放支持
 
+## 示例
+见`index.html`文件
+
 ## 使用
 
 构造器：`SMmuiscPlay(options)`
