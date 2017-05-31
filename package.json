@@ -1,0 +1,19 @@
+{
+  "name": "sm-music-play",
+  "version": "1.0.0",
+  "description": "- 极简（无花俏布局和样式）\r - 小巧（117行js代码）\r - 无依赖（无CSS、图片等依赖）\r - 可定制（自定义设置）",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://dunizb@github.com/dunizb/SMmuiscPlay.git"
+  },
+  "author": "http://dunizb.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dunizb/SMmuiscPlay/issues"
+  },
+  "homepage": "https://github.com/dunizb/SMmuiscPlay#readme"
+}
