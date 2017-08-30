@@ -1,5 +1,7 @@
 # 极简模式JavaScript音乐播放器组件
 
+[![](https://badge.juejin.im/entry/592e8dd0ac502e006ca0d715/likes.svg?style=flat-square)](https://juejin.im/entry/592e8dd0ac502e006ca0d715/detail)
+
 ## 特点
 - 极简（无花俏布局和样式）
 - 小巧（117行js代码）
