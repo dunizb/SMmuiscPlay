@@ -27,19 +27,30 @@
 
 ## options选项
 
-**el** 
+**el [必须]** 
+
 指定播放器所在容器（元素、页面）,不指定则默认挂载在`body`上
 ```js
 SMmuiscPlay({
     el: "app",
-    audioUrl: "muisc/xxxx.mp3"
+    audioUrl: "muisc/xxxx.mp3",
+    animaClass: "muiscIconRotate"
 });
 ```
 
-**audioList**
+**audioList [必须]**
+
 音乐列表（无选择列表、有列表）,单个歌曲会隐藏音乐列表
 - title: 音乐名称
 - source: 音乐地址
+
+```js
+SMmuiscPlay({
+    el: "app",
+    audioList:"./music/独角戏.mp3",
+});
+```
+或
 ```js
 SMmuiscPlay({
     el: "app",
@@ -56,7 +67,25 @@ SMmuiscPlay({
 });
 ```
 
+**animaClass [必须]**
+
+定义音乐图标旋转动画
+```css
+@keyframes muiscIconRotate{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+```
+```js
+SMmuiscPlay({
+    el: "app",
+    audioUrl: "muisc/xxxx.mp3",
+    animaClass: "muiscIconRotate"
+});
+```
+
 **position**
+
 播放器位置，CSS定位  
 ```js
 SMmuiscPlay({
@@ -67,6 +96,7 @@ SMmuiscPlay({
 ```
 
 **buttonImgSrc**
+
 播放按钮图片,背景图片，大小为24X20
 ```js
 SMmuiscPlay({
@@ -78,6 +108,7 @@ SMmuiscPlay({
 ```
 
 **htmls**
+
 自定义
 ```js
 SMmuiscPlay({
