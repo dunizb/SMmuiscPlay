@@ -97,7 +97,7 @@ SMmuiscPlay({
 
 **buttonImgSrc**
 
-播放按钮图片,背景图片，大小为24X20
+音乐播放按钮图片,强烈建议使用SVG图片
 ```js
 SMmuiscPlay({
     el: "app",
