@@ -10,11 +10,11 @@
         el: "",
         position: "",
         buttonImgSrc: "",
-        htmls: `<audio autoplay loop style="width:0px;">
-                    <source src="" type="audio/mpeg" />
-                </audio>
-                <select>
-                </select>`
+        htmls: '<audio autoplay loop style="width:0px;">'+
+                    '<source src="" type="audio/mpeg" />'+
+                '</audio>'+
+                '<select>'+
+                '</select>'
     };
     var PlayCode = function(options) {
         var settings = Object.assign({}, defualts, options);//缺省值合并
