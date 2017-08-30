@@ -129,8 +129,6 @@ SMmuiscPlay({
     audioUrl: "muisc/xxxx.mp3"
 });
 ```
-<<<<<<< HEAD
-=======
 
 ## 更新
 
@@ -156,4 +154,3 @@ SMmuiscPlay({
     animaClass: "muiscIconRotate"
 });
 ```
->>>>>>> v2
