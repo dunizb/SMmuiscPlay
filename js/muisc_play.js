@@ -1,7 +1,7 @@
 ;(function(global){
     var __INFO__ = {
         plugins: "SMmuiscPlay",
-        version: "0.0.1",
+        version: "0.0.2",
         author: "Dunizb",
         website: "http://dunizb.com"
     };
@@ -29,13 +29,11 @@
         //插入节点
         audioDom.appendChild(audioBox);
 
-        // var audioButton = audioBox.querySelectorAll("a")[0];
         var audioList = audioBox.querySelectorAll("select")[0];
         var audioTag = audioBox.querySelectorAll("audio")[0];
 
         //跟换播放按钮图片
         if(!settings.buttonImgSrc) {
-            // audioButton.style.backgroundSize = "73px";
             audioBox.style.backgroundImage = `url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NPHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJmdWxsIg0geG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIg0geG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiDSB4bWxuczpldj0iaHR0cDovL3d3dy53My5vcmcvMjAwMS94bWwtZXZlbnRzIiANICBoZWlnaHQ9IjYwcHgiIA0gIHdpZHRoPSI2MHB4IiANPg08cGF0aCBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgb3BhY2l0eT0iMC41MDIiIGZpbGw9InJnYiggMCwgMCwgMCApIg0gZD0iTTMwLDEgQzQ2LjAxNiwxIDU5LDEzLjk4NCA1OSwzMCBDNTksNDYuMDE2IDQ2LjAxNiw1OSAzMCw1OSBDMTMuOTg0LDU5IDEsNDYuMDE2IDEsMzAgQzEsMTMuOTg0IDEzLjk4NCwxIDMwLDEgWiAiLz4NPHBhdGggc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIGZpbGw9InJnYiggMjU1LCAyNTUsIDI1NSApIg0gZD0iTTMwLDYwIEMxMy40MzEsNjAgMCw0Ni41NjkgMCwzMCBDMCwxMy40MzEgMTMuNDMxLDAgMzAsMCBDNDYuNTY5LDAgNjAsMTMuNDMxIDYwLDMwIEM2MCw0Ni41NjkgNDYuNTY5LDYwIDMwLDYwIFpNMzAsMyBDMTUuMDg4LDMgMywxNS4wODggMywzMCBDMyw0NC45MTIgMTUuMDg4LDU3IDMwLDU3IEM0NC45MTIsNTcgNTcsNDQuOTEyIDU3LDMwIEM1NywxNS4wODggNDQuOTEyLDMgMzAsMyBaICIvPg08cGF0aCBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgZmlsbD0icmdiKCAyNTUsIDI1NSwgMjU1ICkiDSBkPSJNMzEuMDg4LDEwIEMzMS4zNywxMi4wMDEgMzEuNDEsMTQuNTI0IDMzLjUwNiwxNy4wNDcgQzM1LjExNywxOC45NjkgMzYuOTMxLDIwLjY5IDM4LjE4LDIyLjI1MiBDMzkuODMyLDI0LjI5NCA0MSwyNi44NTcgNDEsMjkuNDYgQzQxLDMzLjYyNCAzOC45ODYsMzcuNzQ3IDM3LjYxNSw0MC4wMyBDMzcuNjE1LDQwLjAzIDM2Ljk3MSw0MC4wMyAzNi45NzEsNDAuMDMgQzM3LjkzOCwzNy44NjggMzkuODcyLDM0LjMwNCAzOS43MSwzMC41MDEgQzM5LjYzLDI4LjM3OCAzOC44MjQsMjYuMDk2IDM3LjQ1NSwyNC40MTUgQzM1LjkyMywyMi40NTIgMzMuMzQ0LDIwLjg5MSAzMS4wODgsMjAuNzMxIEMzMS4wODgsMjAuNzMxIDMxLjA4OCw0My40MzMgMzEuMDg4LDQzLjQzMyBDMzEuMDg4LDQ1LjIzNSAzMCw0Ni44NzcgMjguNDI5LDQ4LjA3OCBDMjYuODk4LDQ5LjI3OSAyNC44ODMsNTAgMjMuMTEsNTAgQzIxLjk4Miw1MCAyMC45MzQsNDkuNjQgMjAuMjA5LDQ5LjAzOSBDMTkuNDQzLDQ4LjQzOCAxOSw0Ny41NTggMTksNDYuNTE3IEMxOSw0NC44NzUgMjAuMTI4LDQzLjIzMyAyMS42NTksNDIuMDMyIEMyMy4xOTEsNDAuNzkxIDI1LjEyNCwzOS45OSAyNi43MzYsMzkuOTkgQzI4LjE0NywzOS45OSAyOS4zNTUsNDAuMTkgMzAuMDgxLDQwLjg3MSBDMzAuMDgxLDQwLjg3MSAzMC4wODEsMTAgMzAuMDgxLDEwIEMzMC4wODEsMTAgMzEuMDg4LDEwIDMxLjA4OCwxMCBaICIvPg08L3N2Zz4N')`;
         }else{
             audioBox.style.backgroundImage = 'url('+settings.buttonImgSrc+')';
@@ -67,7 +65,6 @@
 
         var audioFn = {
             play: function(url) {
-                console.log(1);
                 if(url) audioTag.src = url;
                 audioTag.play();
                 audioBox.style.backgroundImage = audioBox.style.backgroundImage;
@@ -79,7 +76,6 @@
                 audioBox.style.backgroundImage = audioBox.style.backgroundImage;
                 audioBox.style.cssText = audioBox.style.cssText + settings.position;
                 audioBox.style.animation = "";
-                console.log(audioBox.style.cssText);
             }
         };
 

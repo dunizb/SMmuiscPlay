@@ -25,6 +25,8 @@
 
 构造器：`SMmuiscPlay(options)`
 
+示例演示页面：index.html
+
 ## options选项
 
 **el [必须]** 
