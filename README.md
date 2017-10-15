@@ -45,35 +45,6 @@ SMmuiscPlay({
 });
 ```
 
-**audioList [必须]**
-
-音乐列表（无选择列表、有列表）,单个歌曲会隐藏音乐列表
-- title: 音乐名称
-- source: 音乐地址
-
-```js
-SMmuiscPlay({
-    el: "app",
-    audioList:"./music/独角戏.mp3",
-});
-```
-或
-```js
-SMmuiscPlay({
-    el: "app",
-    audioUrl: [
-        {
-            title: "aaaaaa",
-            source: "muisc/aaaaaa.mp3"
-        },
-        {
-            title: "bbbbbb",
-            source: "muisc/bbbbbb.mp3"
-        }
-    ]
-});
-```
-
 **animaClass [必须]**
 
 定义音乐图标旋转动画
@@ -131,6 +102,9 @@ SMmuiscPlay({
 ```
 
 ## 更新
+**2017.10.15**
+0.0.2 => 0.0.3
+去掉了audioList特性
 
 **2017.08.30**
 升级 0.0.1 => 0.0.2
