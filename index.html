@@ -9,13 +9,27 @@
         body{
             margin: 0;
             padding: 0;
+            max-width: 320px;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
         }
         #app{
-            width: 320px;
+            max-width: 320px;
             height: 400px;
             border: 1px solid #ccc;
             display: list-item;
             position: relative;
+        }
+        #app .info{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -74.445px;
         }
         @keyframes muiscIconRotate{
             from{transform: rotate(0deg);}
@@ -24,24 +38,20 @@
     </style>
 </head>
 <body>
-    <div id="app"></div>
+    <div id="app">
+        <div class="info">
+            ☞ <a href="https://github.com/dunizb/SMmuiscPlay" target="_blank">查看GitHu源码</a> ☜
+        </div>
+    </div>
+    <p>MP3文件加载可能需要一会儿...</p>
 </body>
 <script src="./js/muisc_play.js"></script>
 <script>
    SMmuiscPlay({
        el: "app",
-       audioList:"./music/独角戏.mp3",
+       audioUrl:"./music/大王叫我来巡山.mp3",
        position: "top:10px;right:10px",//右上角
-       animaClass: "muiscIconRotate",//音乐图标旋转动画名称
+       animaClass: "muiscIconRotate"
    }); 
-
-// {
-//     title: "独角戏",
-//     source: "./music/独角戏.mp3"
-// },
-// {
-//     title: "大王叫我来巡山",
-//     source: "./music/大王叫我来巡山.mp3"
-// }
 </script>
 </html>
