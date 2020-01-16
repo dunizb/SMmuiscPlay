@@ -60,7 +60,7 @@
         }
 
         var _device = (/Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent));
-        var clickEvtName = _device ? "touchstart" : "mousedown";
+        var clickEvtName = _device ? "touchend" : "mousedown";
 
         //给按钮绑定事件
         audioBox.addEventListener(clickEvtName, function(e){
@@ -85,6 +85,6 @@
 
         audioBox.style.cssText += ";animation: "+settings.animaClass+" .8s linear infinite;";
     };
-    
+
     global[__INFO__.plugins] = PlayCode;
 })(typeof window !== 'undefined' ? window : this);
